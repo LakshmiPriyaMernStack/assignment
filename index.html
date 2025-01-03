@@ -1,0 +1,110 @@
+<!-- STUDENT REGISTRATION FORM -->
+<!Doctype html>
+<html>
+   <head>
+       <title>Student registration form</title>
+       <style>
+           fieldset{
+               border-radius: 50px;
+               border-top-left-radius: 0%;
+               border-width: 30px;
+               /* margin-top:50px; */
+               margin-left: 200px;
+               margin-right: 200px;
+           }
+           h1{
+               text-align: center;
+           }
+       </style>
+   </head>
+   <body>
+       <h1>STUDENT REGISTRATION FORM</h1>
+       <form>
+           <div style="text-align: center;">
+               <fieldset>
+                   <legend style="text-align: left;"><h2>Register here</h2></legend>
+                   <br>
+                   <span>
+                       <label for="Name:">Name:</label>
+                       <input type="text" id="Name" placeholder="First*" name="First">
+                       <input type="text" id="Name" placeholder="Middle" name="Middle">
+                       <input type="text" id="Name" placeholder="Last*" name="Last">
+                       <br><br>
+                       <label for="Father Name:">Father Name:</label>
+                       <input type="text" id="Father Name" placeholder="First*" name="First">
+                       <input type="text" id="Father Name" placeholder="Middle" name="Middle">
+                       <input type="text" id="Father Name" placeholder="Last*" name="Last">
+                       <br><br>
+                       <label for="Name:">Mother Name:</label>
+                       <input type="text" id="Mother Name" placeholder="First*" name="First">
+                       <input type="text" id="Mother Name" placeholder="Middle" name="Middle">
+                       <input type="text" id="Mother Name" placeholder="Last*" name="Last">
+                       <br><br>
+                       
+                       <span>Select your Gender: </span>
+                       <input type="radio" id="Male" value="Male">
+                       <label for="Male">Male</label>
+                       <input type="radio" id="Female" value="Female">
+                       <label for="Female">Female</label>
+                       <input type="radio" id="TransGender" value="TransGender">
+                       <label for="TransGender">TransGender</label>
+                       <br><br>
+                       
+                       <label for="DoB">Date of Birth:</label>
+                       <input type="date" id="DOB">
+                       <label for="age">Age:</label>
+                       <input type="number" id="age" name="age" placeholder="Enter your age" >
+                       <br><br>
+                       
+                       <label for="email">E-Mail:</label>
+                       <input type="email" id="email" name="email" placeholder="Enter your Mail-id">
+                       <br><br>
+                       
+                       <label for="Country">Country:</label>          
+                       <select id="Country" name="country">
+                           <option value="">Country</option>
+                           <option value="India">India</option>
+                           <option value="U.S.A">U.S.A</option>
+                           <option value="Europe">Europe</option>
+                           <option value="Australia">Australia</option>
+                           <option value="Canada">Canada</option>
+                       </select>
+                       <label for="phone">Phone Number:</label>
+                       <input type="number" id="phone" placeholder="Enter phone number">
+                       
+                   </span>
+                   <br><br>
+                   
+                   <div>
+                       <label for="adress">Address:</label>
+                       <textarea id="adress" name="address" rows="10" cols="50" placeholder="Enter your address"></textarea>
+                   </div>
+                   <br>
+                   
+                   <span>
+                       <label for="branch">Select Your Branch:</label>
+                       <input list="Branch" placeholder="Choose">
+                       <datalist id="Branch">
+                           <option value="CSE">CSE</option>
+                           <option value="CSE-IOT">CSE-IOT</option>
+                           <option value="ECE">ECE</option>
+                           <option value="EEE">EEE</option>
+                           <option value="MECH">MECH</option>
+                           <option value="CIVIL">CIVIL</option>
+                           <option value="MBA">MBA</option>
+                           <option value="MCA">MCA</option>
+                           <option value="CSE-AMIL">CSE-AIML</option>
+                           <option value="CSE-CS">CSE-CS</option>
+                           <option value="CSE-DS">CSE-DS</option>
+                       </datalist>
+                   </span>
+               </fieldset>
+               
+               <span>
+                   <button>Cancel Field</button>
+                   <button>Submit</button>
+               </span>
+           </div>
+       </form>
+   </body>
+</html>
